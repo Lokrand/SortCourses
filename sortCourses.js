@@ -17,12 +17,6 @@ let requiredRange3 = [200, null];
 
 // Функция для вывода подходящих под фильтр курсов
 function filterByPrices(coursePrice, priceRange) {
-  let coursesWithoutRange = []
-  coursePrice.forEach(element => {
-    if (element.prices[1] === null && element.prices[0] === null) {
-      coursesWithoutRange.push(element);
-    }
-  }); 
   if (priceRange[0] === null) {
     priceRange[0] = 0;
   }
